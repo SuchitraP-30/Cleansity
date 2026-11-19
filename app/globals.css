@@ -1,0 +1,147 @@
+/* @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+/* 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e8f5e9;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+header {
+  background: #1b5e20;
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 26px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: #c8e6c9;
+}
+
+.content {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+section {
+  background: white;
+  padding: 55px;
+  width: 650px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #b7d8b9;
+  color: #1b5e20;
+}
+
+section h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+section h3 {
+  margin-top: 20px;
+}
+
+.about ul {
+  margin: 20px;
+  line-height: 2;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login input {
+  padding: 13px;
+  border: 1px solid #81c784;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login button {
+  padding: 13px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 18px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+}
